@@ -139,14 +139,14 @@
                     } else {
                         parent.location.hash = hash
                         alert[0].style.display = 'block'
-                        password[0].setAttribute('placeholder', 'Returned 404: Invalid credentials!')
+                        password[0].setAttribute('placeholder', 'Invalid credentials!')
                         password[0].value = ''
                     }
                 }
                 request.onerror = function () {
                     parent.location.hash = hash
                     alert[0].style.display = 'block'
-                    password[0].setAttribute('placeholder', 'Returned 404: Invalid credentials!')
+                    password[0].setAttribute('placeholder', 'Invalid credentials!')
                     password[0].value = ''
                 }
                 request.send()
